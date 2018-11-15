@@ -27,6 +27,7 @@ a{
         {
             margin-top: 5px;
             background-image: url(bge.jpg);
+	 background-size:cover;
             width: 98.5%;
             height: 400px;
             position: absolute;
