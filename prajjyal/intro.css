@@ -1,0 +1,43 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+.A{
+  font-size: 52px;
+  
+  transition:translate;
+  animation-name: moveright;
+  animation-duration: 0.7s;
+  
+ }
+
+.B
+{
+	font-size: 60px;
+}
+.C
+{
+	padding: 2%;
+	margin: 8%;
+	font-size: 45px;
+}
+.D
+{
+	padding: 4%;
+	font-size: 30px;
+}
+.E
+{
+	padding: 0.2%;
+	font-size: 80px;
+	text-align: center;
+}
+.Z
+{
+  font-size: 75px;
+ letter-spacing: 2.85cm;
+ text-align: center;
+}

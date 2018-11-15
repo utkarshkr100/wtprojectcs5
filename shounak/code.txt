@@ -1,0 +1,123 @@
+<html>
+	<head>
+		<title>List 
+		</title>
+	</head>
+<p align="Center"><b><h1>HTML LISTS</h1> </b> </p>
+<hr>
+<h3>Introduction </h3>
+<p>Lists are used to group together related pieces of information so they are clearly associated with each other and easy to read. In modern 
+   web development, lists are workhorse elements, frequently used for navigation as well as general content.
+</p>
+<p>Lists are good from a structural point of view as they help create a well-structured, more accessible, easy-to-maintain document. They are also
+   useful because they provide specialized elements to which we can attach CSS styles. Finally, semantically correct lists help visitors read our
+   web site, and they simplify maintenance when our pages need to be updated.
+</p>
+<h3> The Three List Types</h3>
+<p>There are three list types in HTML: </p>
+<ul>
+<li>unordered list — used to group a set of related items in no particular order</li>
+<li>ordered list — used to group a set of related items in a specific order</li>
+<li>description list — used to display name/value pairs such as terms and definitions</li>
+</ul>
+<p>Each list type has a specific purpose and meaning in a web page.</p>
+<h3>Unordered List</h3>
+<p>Unordered (bulleted) lists are used when a set of items can be placed in any order. An example is a shopping list:</p>
+<ul>
+<li>milk</li>
+<li>bread</li>
+<li>butter</li>
+<li>coffee beans</li>
+</ul>
+
+<p>We can use CSS to change the bullet to one of several default styles, use our own image, or even display the list without bullets — we’ll look
+at how to do that in the Styling lists and links article.</p>
+<h4>Unordered list Syntax</h4>
+<p>Unordered lists use one set of <code>&lt;ul&gt;&lt;/ul&gt;</code> tags wrapped around one or more sets of <code>&lt;li&gt;&lt;/li&gt;</code> tags:</p>
+<img src =" Capture3.PNG" height="400" width="800">
+
+
+
+
+
+
+
+
+<h3>Ordered list</h3>
+<p>Ordered (numbered) lists are used to display a list of items that should be in a specific order. An example is a shopping list:</p>
+<ol>
+<li>milk</li>
+<li>bread</li>
+<li>butter</li>
+<li>coffee beans</li>
+</ol>
+<p>Ordered lists can be displayed with several sequencing options. The default in most browsers is decimal numbers, but there are others available:</p>
+<ul>
+<li>Letters</li>
+<ul>
+<li>Lowercase ascii letters (a, b, c…)</li>
+<li>Uppercase ascii letters (A, B, C…).</li>
+</ul>
+<li>
+Numbers</li>
+<ul>
+<li>Decimal numbers (1, 2, 3…)</li>
+<li>Lowercase Roman numerals (i, ii, iii…)</li>
+<li>Uppercase Roman numerals (I, II, III…)</li>
+</ul>
+</ul>
+<p>As with unordered lists, we can use CSS to change the style of our ordered lists.</p>
+<h4>Ordered list Syntax</h4>
+<p>Ordered lists use one set of <code>&lt;ol&gt;&lt;/ol&gt;</code> tags wrapped around one or more sets of <code>&lt;li&gt;&lt;/li&gt;</code> tags:</p>
+<img src =" Capture4.PNG" height="400" width="800">
+
+
+
+
+<h3>Description lists</h3>
+<p>HTML also supports description lists.</p>
+<p>
+A description list is a list of terms, with a description of each term.
+</p>
+<p>
+The <code>&lt;dl&gt</code> tag defines the description list, the <code>&lt;dt&gt;</code> tag defines the term (name), and the <code>&lt;dd&gt</code> tag describes each term:
+</p>
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+<h4>Description List Syntax</h4>
+<p>Ordered lists use one set of <code>&lt;ol&gt;&lt;/ol&gt;</code> tags wrapped around one or more sets of <code>&lt;li&gt;&lt;/li&gt;</code> tags:</p>
+
+<img src =" Capture5.PNG" height="400" width="800">
+
+
+
+
+
+
+
+
+
+<h3>Nested List</h3>
+<p>An individual list item can contain another entire list, called a nested list. It is useful for things like tables of contents that contain sub
+ -sections:</p>
+ <p>List can be nested (lists inside lists):</p>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+<h4>Nested List Syntax</h4>
+<img src =" Capture6.PNG" height="400" width="800">
+
+

@@ -1,0 +1,175 @@
+<html>
+	<head>
+		<title>Frames</title>
+		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+		<style>
+
+		h1{
+			color: orangered;
+			font-size: 40px;
+			font-family: 'Varela Round', sans-serif;
+			text-shadow: 4px 4px 6px black;
+			text-decoration: underline;
+			font-style: normal;
+		}
+		h2{
+			font-size:35px;
+			color:#ECE830;
+			fo
+		}
+
+		 body,html{
+		 color:white;
+		 font-style:  italic;
+		font-size: 18px;
+		background-image: url("crystal1.png");
+			 }
+	a.demo{font-family: "Open Sans",Arial,sans-serif; background:#88c53a; color:#fff; font-size:13px; padding:3px 10px; border:1px solid #d6d6d6; position:absolute; right:5px; margin:-6px 17px 0px 0px;}
+	th{
+		color:lightgreen;
+	}
+		</style>
+	</head>
+	<body>
+		<h1><center>FRAMES</h1>
+			<hr>
+		<h2>What are Frames??</h2>
+		<p>HTML frames are used to divide your browser window into multiple sections
+		   where each section can load a separate HTML document.
+		   A collection of frames in the browser window is known as a frameset.
+		   The window is divided into frames in a similar way the tables are organized: into rows and columns.</p>
+		<h2>Why Frames are not recommended nowadays?</h2>
+		<p>There are few drawbacks with using frames, so it's never recommended to use frames in your webpages −
+           Some smaller devices cannot cope with frames often because their screen is not big enough to be divided up.
+           Sometimes your page will be displayed differently on different computers due to different screen resolution.
+           The browser's back button might not work as the user hopes.
+           There are still few browsers that do not support frame technology.</p>
+		<h2>How to create Frames and its syntax!!</h2>
+		<p>Frames are created by using &lt;frameset&gt; tag instead of body tag.
+		   The rows attribute of &lt;frameset&gt; tag defines horizontal frames and cols attribute defines vertical frames.</p>
+<blockquote><pre class="demo">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+&lt;title&gt;HTML Frames&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;frameset cols = "20%,60%,20%"&gt;
+&lt;frame name = "left" src = "D:\1705379\1.html" /&gt;
+&lt;frame name = "right" src = "D:\1705379\2.html" /&gt;
+&lt;frame name = "main" src = "D:\1705379\3.html" /&gt;
+
+&lt;noframes&gt;
+&lt;body&gt;Your browser does not support frames.&lt;/body&gt;
+&lt;/noframes&gt;
+
+&lt;/frameset&gt;
+
+&lt;/html&gt;
+</blockquote></pre>
+			<p>Above code gives the following result:</p>
+		<iframe src = "frame_practice.html" width = "555" height = "200">
+         Sorry your browser does not support inline frames.
+        </iframe>
+		<h2>Attributes of &lt;frameset&gt; tag are:<h2>
+		<table class="table table-bordered" border="2" >
+<tr border="2">
+<th>Sr.No</th>
+<th style="text-align:center">Attribute &amp; Description</th>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">1</td>
+<td>
+<p><b><u>cols</u></b></p>
+<p>Specifies how many columns are contained in the frameset and the size of each column. You can specify the width of each column in one of the four ways &minus;
+Absolute values in pixels. For example, to create three vertical frames, use <i>cols = "100, 500, 100"</i>.
+A percentage of the browser window. For example, to create three vertical frames, use <i>cols = "10%, 80%, 10%"</i>.
+Using a wildcard symbol. For example, to create three vertical frames, use <i>cols = "10%, *, 10%"</i>. In this case wildcard takes remainder of the window.
+As relative widths of the browser window. For example, to create three vertical frames, use <i>cols = "3*, 2*, 1*"</i>. This is an alternative to percentages. You can use relative widths of the browser window. Here the window is divided into sixths: the first column takes up half of the window, the second takes one third, and the third takes one sixth.</p>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">2</td>
+<td>
+<p><b><u>rows</u></b></p>
+<p>This attribute works just like the cols attribute and takes the same values, but it is used to specify the rows in the frameset. For example, to create two horizontal frames, use <i>rows = "10%, 90%"</i>. You can specify the height of each row in the same way as explained above for columns.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">3</td>
+<td>
+<p><b><u>border</u></b></p>
+<p>This attribute specifies the width of the border of each frame in pixels. For example, border = "5". A value of zero means no border.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">4</td>
+<td>
+<p><b><u>frameborder</u></b></p>
+<p>This attribute specifies whether a three-dimensional border should be displayed between frames. This attribute takes value either 1 (yes) or 0 (no). For example frameborder = "0" specifies no border.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">5</td>
+<td>
+<p><b><u>framespacing</u></b></p>
+<p>This attribute specifies the amount of space between frames in a frameset. This can take any integer value. For example framespacing = "10" means there should be 10 pixels spacing between each frames.</p></td>
+</tr>
+</table>
+<h2>The &lt;frame&gt; Tag Attributes</h2>
+<p>Following are the important attributes of &lt;frame&gt; tag &minus;</p>
+<table class="table table-bordered" border="1">
+<tr>
+<th>Sr.No</th>
+<th style="text-align:center;">Attribute &amp; Description</th>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">1</td>
+<td>
+<p><b><u>src</u></b></p>
+<p>This attribute is used to give the file name that should be loaded in the frame. Its value can be any URL. For example, src = "/html/top_frame.htm" will load an HTML file available in html directory.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">2</td>
+<td>
+<p><b><u>name</u></b></p>
+<p>This attribute allows you to give a name to a frame. It is used to indicate which frame a document should be loaded into. This is especially important when you want to create links in one frame that load pages into an another frame, in which case the second frame needs a name to identify itself as the target of the link.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">3</td>
+<td>
+<p><b><u>frameborder</u></b></p>
+<p>This attribute specifies whether or not the borders of that frame are shown; it overrides the value given in the frameborder attribute on the &lt;frameset&gt; tag if one is given, and this can take values either 1 (yes) or 0 (no).</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">4</td>
+<td>
+<p><b><u>marginwidth</u></b></p>
+<p>This attribute allows you to specify the width of the space between the left and right of the frame's borders and the frame's content. The value is given in pixels. For example marginwidth = "10".</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">5</td>
+<td>
+<p><b><u>marginheight</u></b></p>
+<p>This attribute allows you to specify the height of the space between the top and bottom of the frame's borders and its contents. The value is given in pixels. For example marginheight = "10".</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">6</td>
+<td>
+<p><b><u>noresize</u></b></p>
+<p>By default, you can resize any frame by clicking and dragging on the borders of a frame. The noresize attribute prevents a user from being able to resize the frame. For example noresize = "noresize".</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">7</td>
+<td>
+<p><b><u>scrolling</u></b></p>
+<p>This attribute controls the appearance of the scrollbars that appear on the frame. This takes values either "yes", "no" or "auto". For example scrolling = "no" means it should not have scroll bars.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">8</td>
+<td>
+<p><b><u>longdesc</u></b></p>
+<p>This attribute allows you to provide a link to another page containing a long description of the contents of the frame. For example longdesc = "framedescription.htm"</p></td>
+</tr>
+</table>
+<br>
+	</body>
+</html>
