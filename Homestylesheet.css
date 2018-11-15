@@ -18,7 +18,7 @@ a{
         div
         {
 
-            background-image: url(crystal.png);
+            background-image: url("crystal.png");
             height: 45px;
             width: 100%;
           
